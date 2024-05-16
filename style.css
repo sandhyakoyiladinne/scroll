@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin-left: 35px;    
+}
+nav a:hover{
+    color: deeppink;
+
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f242d;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+}
+
+section:nth-child(odd) {
+    background-color: #323946;
+}
+.banner{
+    background-image: url("https://thumbs.dreamstime.com/z/abstract-plexus-blue-geometrical-shapes-connection-web-concept-digital-communication-technology-network-background-121375921.jpg?ct=jpeg");
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: cadetblue;
+    line-height: 2rem;
+    color: #fff;
+}
+.btn{
+    border: 1px solid #323946;;
+    background-color: #fff;
+    color: #000;
+    padding: 8px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+#home{
+    background-color: rgb(202, 53, 83);
+}
+#service{
+    background-color: burlywood;
+}
+#about{
+    background-color: cadetblue;
+}
+#contact{
+    background-color: coral;
+}
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+      display: none;
+    }
+    
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .show-menu nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f9f9f9;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+    }
+  }
